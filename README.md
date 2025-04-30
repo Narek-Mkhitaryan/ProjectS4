@@ -65,7 +65,20 @@ The interface is built using `tkinter`, data is stored in `SQLite`, and built-in
    python main.py
 
 
+## Note for Windows Users
 
+To ensure the application runs correctly on Windows, you need to install and configure **XLaunch** (part of Xming or VcXsrv). This is required for GUI applications using `tkinter` in some WSL environments.
+
+### Steps:
+
+1. Download and install XLaunch from the official source (e.g., [VcXsrv GitHub](https://github.com/ArcticaProject/vcxsrv) or [Xming]).
+2. Launch **XLaunch** and configure it as follows:
+   - Select **Multiple windows**
+   - Choose **Start no client**
+   - Check **Disable access control** (for development purposes)
+3. Keep XLaunch running in the background before starting the Python application.
+
+This setup enables the graphical interface to appear correctly when running the app from WSL
 
 
    
